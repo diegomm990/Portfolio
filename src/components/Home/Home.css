@@ -1,0 +1,331 @@
+/* ---------- Min-Width 890 -------------------- */
+
+  
+  /* Carrusel */
+  .main {
+    height: 50vh;
+    width: 20vw;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+  }
+  .d1 {
+    position: absolute;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2022/08/pexels-antonio-batinic--4164418--1-.jpg);
+    background-size: 700px 500px;
+    
+    height: 15vh;
+    width: 7.5vw;
+    
+    background-position: 50% 50%;
+    
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd1 10s 1, dd12 10s 1;
+    animation-delay: 4s, 14s;
+  }
+  .d2 {
+    position: absolute;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2022/08/pexels-antonio-batinic--4164418--1-.jpg);
+    background-size: 700px 500px;
+    
+    height: 25vh;
+    width: 12.5vw;
+    
+    background-position: 30% 40%;
+    left: 5vw;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd2 10s 2;
+    animation-delay: 4s;
+  }
+  .d3 {
+    position: absolute;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2022/08/pexels-antonio-batinic--4164418--1-.jpg);
+    background-size: 700px 500px;   
+    overflow: hidden;
+    
+    height: 50vh;
+    width: 20vw;
+    left: 12.5vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: 75% 50%;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd3 10s 2;
+    animation-delay: 4s;
+  }
+  .d4 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2022/08/pexels-antonio-batinic--4164418--1-.jpg);
+    background-size: 700px 500px;
+    
+    height: 40vh;
+    width: 12.5vw;
+    left: 30vw;
+    background-position: 80% 70%;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd4 10s 2;
+    animation-delay: 4s;
+  }
+  
+  @keyframes dd1 {
+    0% {
+    }
+    50% {
+      width: 50vw;
+    }
+  }
+  @keyframes dd12 {
+    0% {
+    }
+    50% {
+      background-position: Calc(0vw - 40px) 50%;
+    }
+  }
+  @keyframes dd2 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-10vw - 40px) 50%;
+    }
+  }
+  @keyframes dd3 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-35vw - 40px) 50%;
+    }
+  }
+  @keyframes dd4 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-70vw - 40px) 50%;
+    }
+  }
+  
+  /* Carrusel End */
+  
+  /* Basic */
+  .list {
+    padding-top: 17vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .personal {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.image {
+  padding-left: 7.5vw;
+  display: flex;
+  width: 20vw;
+  border-radius: 20px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.minitools {
+  padding: 1rem;
+}
+.dosDagas {
+  height: 15vh;
+  border-radius: 10px;
+}
+
+/* Basic End */
+
+
+
+/* Black Home */
+.home-black{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  min-width: 100%;
+  height: 70vh;
+  padding-top: 5vh;
+}
+.nameB-black {
+  display: flex;
+  color: whitesmoke;
+  margin: 0;
+  width: 80%;
+  padding-top: 2rem;
+}
+.projects-black{
+  background-color: black;
+  color: whitesmoke;
+  padding-top: 5vh;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.tools-black {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+.toolsBig-black {
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.projects-list-black{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+  /* Black Home End*/
+  
+  /* White Home */
+  .home-white{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    max-width: 100%;
+    height: 70vh;
+    padding-top: 5vh;
+  }
+  .nameB-white {
+    display: flex;
+    color: black;
+    margin: 0;
+    width: 80%;
+    padding-top: 2rem;
+  }
+  .projects-white{
+    padding-top: 5vh;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+  }
+.tools-white {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+  }
+  .toolsBig-white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+
+  }
+  .projects-list-white{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  /* White Home End*/
+
+
+/* ----------- Max-Width 970px -------------- */
+@media screen and (max-width: 970px) {
+  /* Black Home */
+  .home-black {
+    min-width: 100%;
+  }
+  .tools-black {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  /* Black Home  End*/
+
+  /* White Home */
+  .home-white {
+    min-width: 100%;
+  }
+  .tools-white {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  /* White Home End*/
+
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: none;
+  }
+  .image {
+    width: 50vw;
+  }
+  .personal {
+   width: 70vw; 
+  }
+  /* Black Home */
+  .tools-black {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .home-black {
+    padding-top: 0;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .nameB-black {
+    display: flex;
+    color: whitesmoke;
+  }
+  /* Black Home  End*/
+  /* White Home */
+  .tools-white {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .home-white {
+    height: 60vh;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .nameB-white {
+    display: flex;
+    color: black;
+  }
+  /* White Home End*/
+}
+
+@media screen and (max-width: 330px) {
+  .home-black {
+    height: 80vh;
+  }
+  .tools-black {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+  }
+  .home-white {
+    height: 80vh;
+  }
+  .tools-white {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+  }
+}

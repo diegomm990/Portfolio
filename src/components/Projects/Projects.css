@@ -1,0 +1,105 @@
+
+/* Basic */
+.LogoProject {
+    width: 22vw;
+    border-radius: 10px;
+}
+.GralDescrip {
+    width: 30vw;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.LogoBig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Basic End */
+
+/* Black Mode */
+.Projects-Black {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    padding-top: 17vh;
+    padding-bottom: 10vh;
+    align-items: center;
+}
+.MyProj-Black {
+    color: whitesmoke;
+}
+.IndProj-Black {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+
+}
+.ProjectDescrip-Black {
+    color: whitesmoke;
+}
+.ToolsList-Black {
+     color: whitesmoke;
+}
+.blackLine {
+    margin-top: 5vh;
+    border: 1.5px solid white;
+    width: 80vw;
+}
+/* Black Mode End*/
+
+/* White Mode */
+.Projects-White {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    /* height: 100vh; */
+    padding-top: 17vh;
+    padding-bottom: 10vh;
+    align-items: center;
+}
+.MyProj-White {
+    color: black;
+}
+.IndProj-White {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+
+}
+.ProjectDescrip-White {
+    color: black;
+}
+.ToolsList-White {
+     color: black;
+}
+.whiteLine {
+    margin-top: 5vh;
+    border: 1.5px solid black;
+    width: 80vw;
+}
+/* White Mode End*/
+
+@media screen and (max-width: 950px) {
+    .LogoProject {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .LogoProject {
+        width: 50vw;
+    }
+    .GralDescrip {
+        font-size: 1.1rem;
+        width: 65vw;
+        align-items: flex-start;
+    }
+    .IndProj-Black {
+        flex-direction: column;
+    }
+    .IndProj-White {
+        flex-direction: column;
+    }
+}

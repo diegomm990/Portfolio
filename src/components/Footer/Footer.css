@@ -1,0 +1,89 @@
+.icons {
+    font-size: 3rem;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+.phone {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.mail {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+/* ------- Black Mode ---------- */
+.footer-black {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.social-black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.icon-black {
+    color: whitesmoke;
+}
+.contact-black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+
+}
+
+/* ------- Black Mode End ---------- */
+
+/* ------- White Mode ---------- */
+
+.footer-white {
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.social-white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.icon-white {
+    color: black;
+}
+.contact-white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+
+}
+/* ------- White Mode End ---------- */
+@media screen and (max-width:780px) {
+    .contact {
+         font-size: 1rem;
+         flex-direction: column ;
+    }
+    .footer-black {
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .footer-white {
+        flex-direction: column;
+    }
+
+}

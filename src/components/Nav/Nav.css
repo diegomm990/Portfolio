@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+ /* White Nav Bar */
+ .nav-white {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 17vh;
+    /* width: auto; */
+    min-width: 100%;
+    position: fixed;
+    z-index: 10;
+    border-bottom:  2px solid black;
+}
+.name-white{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    /* padding-top: 1rem; */
+}
+.bigName-white {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.info-white{
+    margin: 0;
+    text-align: center;
+}
+.buttons-white {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-right: 5rem;
+}
+.button-white {
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+.button-white:hover{
+    font-weight: bold;
+}
+.bars-white  {
+    display: none;
+}
+/* White NavBar End */
+
+
+/* Black NavBar */
+.nav-black {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 17vh;
+    /* width: auto; */
+    min-width: 100%;
+    position: fixed;
+    z-index: 10;
+    border-bottom:  2px solid whitesmoke;
+}
+.name-black{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    color: whitesmoke;
+    /* padding-top: 1rem; */
+}
+.bigName-black {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.info-black{
+    margin: 0;
+    text-align: center;
+}
+.buttons-black {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-right: 5rem;
+}
+.button-black {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+.button-black:hover{
+    font-weight: bold;
+}
+.bars-black  {
+    display: none;
+}
+/* Black NavBar End */
+
+/* Night Mode Button */
+.switch {
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #303136;
+}
+
+input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+/* Night Mode Button End*/
+
+@media screen and (max-width: 970px) {
+    /* White Mode */
+    .name-white {
+        padding-left: 4rem;
+    }
+    .bigName-white {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .buttons-white {
+        padding-right: 3rem;
+    }
+    .button-white {
+        font-size: 1.1rem;
+    }
+    /* White Mode End */
+    /* Black Mode  */
+    .name-black {
+        padding-left: 4rem;
+    }
+    .bigName-black {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .buttons-black {
+        padding-right: 3rem;
+    }
+    .button-black {
+        font-size: 1.1rem;
+    }
+    /* Black Mode End */
+}
+@media screen and (max-width: 650px) {
+    /* White Mode  */
+   
+    .bigName-white {
+        font-size: 1.2rem;
+    }
+    .info-white {
+        font-size: 0.8rem;
+    }
+    .button-white {
+        font-size: 0.95rem;
+    }
+    /* White Mode End */
+    /* Black Mode  */
+   
+    .bigName-black {
+        font-size: 1.2rem;
+    }
+    .info-black {
+        font-size: 0.8rem;
+    }
+    .button-black {
+        font-size: 0.95rem;
+    }
+    /* Black Mode End */
+}
+
+@media screen and (max-width:550px) {
+    /* Black Mode */
+    .nav-black {
+        min-width: 100%;
+        z-index: 10;
+    }
+    .bars-black {
+        display: flex;
+        color: whitesmoke;
+        position: relative;
+        font-size: 2rem;
+        right: 3rem;
+    }
+    .buttons-black{
+        display: none;
+    }
+    .buttons-black-small {
+        top: 0;
+        display: flex;
+        margin-top: 17vh;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .button-black {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+    /* Black Mode End */
+    /* White Mode  */
+    .nav-white {
+        min-width: 100%
+    }
+    .bars-white {
+        display: flex;
+        color: black;
+        position: relative;
+        font-size: 2rem;
+        right: 3rem;
+    }
+    .buttons-white{
+        display: none;
+    }
+    .buttons-white-small {
+        top: 0;
+        display: flex;
+        margin-top: 17vh;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: whitesmoke;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .button-white {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+    /* White Mode End */
+
+}
