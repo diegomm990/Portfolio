@@ -87,6 +87,12 @@
     .blackIcon {
         width: 10rem;
     }
+    .whiteBlock {
+        width: 10rem;
+    }
+    .whiteIcon {
+        width: 10rem;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -95,6 +101,14 @@
         font-size: 1.5rem;
     }
     .blackIcon {
+        width: 6rem;
+        font-size: 3rem;
+    }
+    .whiteBlock {
+        width: 6rem;
+        font-size: 1.5rem;
+    }
+    .whiteIcon {
         width: 6rem;
         font-size: 3rem;
     }
